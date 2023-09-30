@@ -29,9 +29,10 @@ header nav {
 }
 
 main {
+
     float: left;
-    width: 80%;
-    padding: 20px;
+    width: 100%;
+    padding: 50px;
 
     overflow: auto;
 }
