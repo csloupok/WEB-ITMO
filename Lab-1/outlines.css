@@ -20,20 +20,54 @@ body {
 }
 
 .navigation {
-    min-width: 150px;
+    min-width: 200px;
     text-align: left;
     position: absolute;
-    float: right;
+    float: left;
     width: 10%;
     color: black;
     background-color: #f1f1f1;
-    right: 0;
 }
 
+/* Стили для выпадающего меню */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    padding: 0;
+    flex: 1;
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+.menu-item.active {
+    color: red;
+}
+
+/* Стили для выделения пункта меню при наведении */
+.menu-item:hover {
+    background-color: #ddd; /* Цвет фона для пункта при наведении */
+}
+
+
 main {
+    align-items: center;
     float: left;
     width: 90%;
-    padding: 50px;
+    padding: 70px;
 }
 
 .group {
@@ -99,3 +133,38 @@ aside p {
     text-decoration: line-through;
 }
 
+
+.table-generator {
+    max-width: 600px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.generated-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.generated-table th, .generated-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}

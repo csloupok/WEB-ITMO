@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Gallery</title>
+    <script src="scripts/main.js" defer></script>
     <link rel="stylesheet" href="outlines.css">
 </head>
 <body>
@@ -12,13 +13,22 @@
         <ul>
             <li><a href="#locations">Locations</a></li>
             <li><a href="#people">People</a></li>
+            <li class="dropdown">
+                <a href="#">Other Pages</a>
+                <ul class="dropdown-content">
+                    <li><a class="menu-item" href="main.html">Main Page</a></li>
+                    <li><a class="menu-item" href="page-1/info.html">More Information</a></li>
+                    <li><a class="menu-item" href="page-2/contacts.html">Contacts</a></li>
+                    <li><a class="menu-item" href="page-3/table.html">Table Generator</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </header>
 
 <main>
     <section id="locations">
-            <h2>Locations</h2>
+        <h2>Locations</h2>
         <div class="group">
             <article>
                 <h3>Location 1</h3>
@@ -30,16 +40,16 @@
                 <p>Description of Location 2</p>
                 <img src="image2.jpg" alt="Location 2">
             </article>
-        <article>
-            <h3>Location 3</h3>
-            <p>Description of Location 3</p>
-            <img src="image3.jpg" alt="Location 3">
-        </article>
-        <article>
-            <h3>Location 4</h3>
-            <p>Description of Location 4</p>
-            <img src="image4.jpg" alt="Location 4">
-        </article>
+            <article>
+                <h3>Location 3</h3>
+                <p>Description of Location 3</p>
+                <img src="image3.jpg" alt="Location 3">
+            </article>
+            <article>
+                <h3>Location 4</h3>
+                <p>Description of Location 4</p>
+                <img src="image4.jpg" alt="Location 4">
+            </article>
         </div>
     </section>
 
